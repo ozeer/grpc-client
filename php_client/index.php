@@ -19,7 +19,7 @@ $request = $helloClient->SayHello($helloRequest)->wait();
 // 返回数组
 /** @var array $status */
 /** @var HelloResponse $response */
-list($response, $status) = $request;
+[$response, $status] = $request;
 
 print_r("Greeter client received: ". $response->getReply());
 

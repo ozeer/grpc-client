@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "grpc/grpc": "^1.57",
-        "google/protobuf": "^3.24"
+        "google/protobuf": "^3.24",
+        "ext-grpc": "*"
     },
     "license": "MIT",
     "autoload": {
