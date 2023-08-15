@@ -1,0 +1,23 @@
+{
+    "name": "zhouyang/php_client",
+    "description": "gRPC php client",
+    "type": "library",
+    "require": {
+        "grpc/grpc": "^1.57",
+        "google/protobuf": "^3.24"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpClient\\": "src/",
+            "GPBMetadata\\":"GPBMetadata/",
+            "Pb\\":"Pb/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zhouyang",
+            "email": "zhouyang2021@163.com"
+        }
+    ]
+}
