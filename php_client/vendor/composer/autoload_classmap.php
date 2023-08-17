@@ -6,6 +6,10 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Client\\GreeterClient' => $baseDir . '/src/Client/GreeterClient.php',
+    'Client\\Hello' => $baseDir . '/src/Client/Hello.php',
+    'Client\\HelloRequest' => $baseDir . '/src/Client/HelloRequest.php',
+    'Client\\HelloResponse' => $baseDir . '/src/Client/HelloResponse.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'GPBMetadata\\Google\\Protobuf\\Any' => $vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Any.php',
     'GPBMetadata\\Google\\Protobuf\\Api' => $vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Api.php',
@@ -18,7 +22,6 @@ return array(
     'GPBMetadata\\Google\\Protobuf\\Timestamp' => $vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Timestamp.php',
     'GPBMetadata\\Google\\Protobuf\\Type' => $vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Type.php',
     'GPBMetadata\\Google\\Protobuf\\Wrappers' => $vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Wrappers.php',
-    'GPBMetadata\\Hello' => $baseDir . '/GPBMetadata/Hello.php',
     'Google\\Protobuf\\Any' => $vendorDir . '/google/protobuf/src/Google/Protobuf/Any.php',
     'Google\\Protobuf\\Api' => $vendorDir . '/google/protobuf/src/Google/Protobuf/Api.php',
     'Google\\Protobuf\\BoolValue' => $vendorDir . '/google/protobuf/src/Google/Protobuf/BoolValue.php',
@@ -147,7 +150,4 @@ return array(
     'Grpc\\ServerStreamingCall' => $vendorDir . '/grpc/grpc/src/lib/ServerStreamingCall.php',
     'Grpc\\Status' => $vendorDir . '/grpc/grpc/src/lib/Status.php',
     'Grpc\\UnaryCall' => $vendorDir . '/grpc/grpc/src/lib/UnaryCall.php',
-    'Pb\\GreeterClient' => $baseDir . '/Pb/GreeterClient.php',
-    'Pb\\HelloRequest' => $baseDir . '/Pb/HelloRequest.php',
-    'Pb\\HelloResponse' => $baseDir . '/Pb/HelloResponse.php',
 );

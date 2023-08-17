@@ -2,10 +2,10 @@
 
 require_once 'vendor/autoload.php';
 
+use Client\GreeterClient;
+use Client\HelloRequest;
+use Client\HelloResponse;
 use Grpc\ChannelCredentials;
-use Pb\GreeterClient;
-use Pb\HelloRequest;
-use Pb\HelloResponse;
 
 // 创建客户端实例
 $helloClient = new GreeterClient('127.0.0.1:8972', [

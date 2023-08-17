@@ -3,7 +3,7 @@
 
 // Original file comments:
 // 版本声明，使用Protocol Buffers v3版本
-namespace Pb;
+namespace Client;
 
 /**
  * 定义服务
@@ -21,16 +21,16 @@ class GreeterClient extends \Grpc\BaseStub {
 
     /**
      * SayHello 方法
-     * @param \Pb\HelloRequest $argument input argument
+     * @param \Client\HelloRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function SayHello(\Pb\HelloRequest $argument,
+    public function SayHello(\Client\HelloRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/pb.Greeter/SayHello',
         $argument,
-        ['\Pb\HelloResponse', 'decode'],
+        ['\Client\HelloResponse', 'decode'],
         $metadata, $options);
     }
 

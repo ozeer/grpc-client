@@ -7,29 +7,19 @@ namespace Composer\Autoload;
 class ComposerStaticInitf8d39df0687e8ba1e988291b7e5cec17
 {
     public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'PhpClient\\' => 10,
-            'Pb\\' => 3,
-        ),
         'G' => 
         array (
             'Grpc\\' => 5,
             'Google\\Protobuf\\' => 16,
             'GPBMetadata\\Google\\Protobuf\\' => 28,
-            'GPBMetadata\\' => 12,
+        ),
+        'C' => 
+        array (
+            'Client\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PhpClient\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-        'Pb\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/Pb',
-        ),
         'Grpc\\' => 
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
@@ -42,13 +32,17 @@ class ComposerStaticInitf8d39df0687e8ba1e988291b7e5cec17
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
-        'GPBMetadata\\' => 
+        'Client\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/GPBMetadata',
+            0 => __DIR__ . '/../..' . '/src/Client',
         ),
     );
 
     public static $classMap = array (
+        'Client\\GreeterClient' => __DIR__ . '/../..' . '/src/Client/GreeterClient.php',
+        'Client\\Hello' => __DIR__ . '/../..' . '/src/Client/Hello.php',
+        'Client\\HelloRequest' => __DIR__ . '/../..' . '/src/Client/HelloRequest.php',
+        'Client\\HelloResponse' => __DIR__ . '/../..' . '/src/Client/HelloResponse.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'GPBMetadata\\Google\\Protobuf\\Any' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Any.php',
         'GPBMetadata\\Google\\Protobuf\\Api' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Api.php',
@@ -61,7 +55,6 @@ class ComposerStaticInitf8d39df0687e8ba1e988291b7e5cec17
         'GPBMetadata\\Google\\Protobuf\\Timestamp' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Timestamp.php',
         'GPBMetadata\\Google\\Protobuf\\Type' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Type.php',
         'GPBMetadata\\Google\\Protobuf\\Wrappers' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Wrappers.php',
-        'GPBMetadata\\Hello' => __DIR__ . '/../..' . '/GPBMetadata/Hello.php',
         'Google\\Protobuf\\Any' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/Any.php',
         'Google\\Protobuf\\Api' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/Api.php',
         'Google\\Protobuf\\BoolValue' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/BoolValue.php',
@@ -190,9 +183,6 @@ class ComposerStaticInitf8d39df0687e8ba1e988291b7e5cec17
         'Grpc\\ServerStreamingCall' => __DIR__ . '/..' . '/grpc/grpc/src/lib/ServerStreamingCall.php',
         'Grpc\\Status' => __DIR__ . '/..' . '/grpc/grpc/src/lib/Status.php',
         'Grpc\\UnaryCall' => __DIR__ . '/..' . '/grpc/grpc/src/lib/UnaryCall.php',
-        'Pb\\GreeterClient' => __DIR__ . '/../..' . '/Pb/GreeterClient.php',
-        'Pb\\HelloRequest' => __DIR__ . '/../..' . '/Pb/HelloRequest.php',
-        'Pb\\HelloResponse' => __DIR__ . '/../..' . '/Pb/HelloResponse.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

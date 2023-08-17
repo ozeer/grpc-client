@@ -6,10 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PhpClient\\' => array($baseDir . '/src'),
-    'Pb\\' => array($baseDir . '/Pb'),
     'Grpc\\' => array($vendorDir . '/grpc/grpc/src/lib'),
     'Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/Google/Protobuf'),
     'GPBMetadata\\Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf'),
-    'GPBMetadata\\' => array($baseDir . '/GPBMetadata'),
+    'Client\\' => array($baseDir . '/src/Client'),
 );

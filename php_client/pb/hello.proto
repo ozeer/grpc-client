@@ -4,6 +4,10 @@ syntax = "proto3";
 // 包名
 package pb;
 
+option php_namespace = "Client";
+option php_metadata_namespace = "Client";
+
+
 // 定义服务
 service Greeter {
     // SayHello 方法

@@ -10,9 +10,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PhpClient\\": "src/",
-            "GPBMetadata\\":"GPBMetadata/",
-            "Pb\\":"Pb/"
+            "Client\\": "src/Client/"
         }
     },
     "authors": [
